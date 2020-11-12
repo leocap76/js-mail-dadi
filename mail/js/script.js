@@ -3,7 +3,7 @@ var emailList = ["prova@gmail.com", "alice@gmail.com", "giulia@gmail.com", "ales
 
 var usermail = prompt ("inserisci la tua email");
 
-var result;
+var result = false;
 
 //controllare email: se l'email è inclusa nell'array invia messaggio: accesso consentito,
 //se l'email non è presente, invia messaggio "accesso non consentito"
@@ -11,8 +11,6 @@ var result;
 for (var i = 0; i < emailList.length; i++) {
   if (usermail == emailList[i]){
     result = true;
-  } else {
-    result = false;
   }
 }
 
